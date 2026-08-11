@@ -1,0 +1,184 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: Arial, sans-serif;
+
+    background: linear-gradient(135deg, #141e30, #243b55);
+}
+
+
+/* Calculator */
+
+.calculator {
+    width: 350px;
+
+    padding: 20px;
+
+    border-radius: 20px;
+
+    background: #1e1e1e;
+
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+
+/* Display */
+
+.display {
+    min-height: 110px;
+
+    padding: 20px;
+
+    margin-bottom: 20px;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: flex-end;
+    align-items: flex-end;
+
+    border-radius: 12px;
+
+    background: #111;
+
+    color: white;
+
+    overflow: hidden;
+}
+
+
+#previous-display {
+    min-height: 25px;
+
+    font-size: 18px;
+
+    color: #999;
+}
+
+
+#current-display {
+    font-size: 40px;
+
+    font-weight: bold;
+
+    word-break: break-all;
+}
+
+
+/* Buttons */
+
+.buttons {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 10px;
+}
+
+
+button {
+    height: 65px;
+
+    border: none;
+
+    border-radius: 12px;
+
+    font-size: 22px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    background: #333;
+
+    color: white;
+
+    transition:
+        transform 0.15s ease,
+        background 0.15s ease;
+}
+
+
+button:hover {
+    background: #444;
+
+    transform: translateY(-2px);
+}
+
+
+button:active {
+    transform: scale(0.95);
+}
+
+
+/* Operators */
+
+.operator {
+    background: #ff9500;
+}
+
+
+.operator:hover {
+    background: #e68a00;
+}
+
+
+/* Equal button */
+
+.equals {
+    background: #28a745;
+}
+
+
+.equals:hover {
+    background: #218838;
+}
+
+
+/* Clear button */
+
+.clear {
+    background: #dc3545;
+}
+
+
+.clear:hover {
+    background: #c82333;
+}
+
+
+/* Two column button */
+
+.span-two {
+    grid-column: span 2;
+}
+
+
+/* Mobile Responsive */
+
+@media (max-width: 400px) {
+
+    .calculator {
+        width: 95%;
+
+        padding: 15px;
+    }
+
+    button {
+        height: 60px;
+    }
+
+    #current-display {
+        font-size: 32px;
+    }
+}
