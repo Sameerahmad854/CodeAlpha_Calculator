@@ -64,7 +64,9 @@ cd CodeAlpha_Calculator
 3. Open `index.html` in your browser.
 
 You can also use **VS Code Live Server** to run the project.
-
+##  Live Demo
+**Live Website:**  
+https://sameerahmad854.github.io/CodeAlpha_Calculator/
 ## Example Calculations
 
 ```text
